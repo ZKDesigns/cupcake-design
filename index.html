@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voňavé Cupcakes — Domácí pečení s láskou</title>
+  <meta name="description" content="Krásné cupcakes v teplých tónech. Recepty, inspirace a 3D galerie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating sprinkles canvas -->
+  <canvas id="sprinkles"></canvas>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">🧁</span>
+        <span>Voňavé Cupcakes</span>
+      </div>
+      <nav class="nav">
+        <a href="#hero">Domů</a>
+        <a href="#gallery">Nabídka</a>
+        <a href="#recipes">Recepty</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero with main 3D cupcake -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Sladké <span class="accent">cupcakes</span><br>s láskou pečené</h1>
+        <p class="hero-subtitle">Teplé tóny, bohaté chutě a krásné dekorace. Objevte naši nabídku a vyzkoušejte recepty.</p>
+        <a href="#gallery" class="btn">Prohlédnout nabídku</a>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="cupcake-3d">
+          <img src="1.jpg" alt="Hlavní cupcake – borůvkové muffiny" class="main-cupcake">
+          <div class="glow-ring"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scrolluj dolů</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Available cupcakes gallery -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Další cupcakes v nabídce</h2>
+      <p class="section-desc">Každý kousek je pečený s péčí a ozdobený s láskou</p>
+
+      <div class="gallery-grid">
+        <article class="cupcake-item" data-tilt>
+          <div class="img-wrap">
+            <img src="2.jpg" alt="Podzimní cupcakes s javorovými listy">
+          </div>
+          <h3>Podzimní listí</h3>
+          <p>Dýňové cupcakes s krémovým frostingem a javorovými listy</p>
+        </article>
+
+        <article class="cupcake-item" data-tilt>
+          <div class="img-wrap">
+            <img src="3.jpg" alt="Pistáciové cupcakes s malinami">
+          </div>
+          <h3>Pistácie & maliny</h3>
+          <p>Světle zelený korpus, pistáciový krém a čerstvé maliny</p>
+        </article>
+
+        <article class="cupcake-item" data-tilt>
+          <div class="img-wrap">
+            <img src="4.jpg" alt="Jahodový cupcake s polevou">
+          </div>
+          <h3>Jahodová vášeň</h3>
+          <p>Hebký vanilkový korpus, bílý krém a lesklá jahodová omáčka</p>
+        </article>
+
+        <article class="cupcake-item" data-tilt>
+          <div class="img-wrap">
+            <img src="5.jpg" alt="Růžové malinové cupcakes">
+          </div>
+          <h3>Malinový sen</h3>
+          <p>Růžový krém, čerstvá malina a máta</p>
+        </article>
+
+        <article class="cupcake-item" data-tilt>
+          <div class="img-wrap">
+            <img src="6.jpg" alt="Broskvové cupcakes">
+          </div>
+          <h3>Broskvový sen</h3>
+          <p>Vanilkový korpus, jemný krém a čerstvá broskev</p>
+        </article>
+
+        <article class="cupcake-item" data-tilt>
+          <div class="img-wrap">
+            <img src="7.jpg" alt="Čokoládové cupcakes s třešní">
+          </div>
+          <h3>Čokoláda & třešeň</h3>
+          <p>Tmavý korpus, krém a čerstvá třešeň s kousky čokolády</p>
+        </article>
+
+        <article class="cupcake-item wide" data-tilt>
+          <div class="img-wrap">
+            <img src="8.jpg" alt="Cupcakes s Oreo a borůvkami">
+          </div>
+          <h3>Oreo & borůvky</h3>
+          <p>Hebký krém, kousky Oreo, borůvky a mléčná čokoláda</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipes -->
+  <section class="recipes-section" id="recipes">
+    <div class="container">
+      <h2 class="section-title">Recepty</h2>
+      <p class="section-desc">Přeloženo do češtiny — vyzkoušejte doma</p>
+
+      <!-- Recipe 1 block -->
+      <div class="recipe-block">
+        <div class="recipe-image">
+          <img src="recipe1.jpg" alt="Recepty na cupcakes">
+        </div>
+        <div class="recipe-content">
+          <h3>Základní recepty na cupcakes</h3>
+          
+          <div class="recipe-card">
+            <h4>🍦 Vanilkové cupcakes</h4>
+            <ul>
+              <li>190 g mouky</li>
+              <li>2 lžičky kypřicího prášku</li>
+              <li>¼ lžičky soli</li>
+              <li>115 g másla</li>
+              <li>200 g cukru</li>
+              <li>2 vejce</li>
+              <li>1 lžička vanilkového extraktu</li>
+              <li>120 ml mléka</li>
+            </ul>
+          </div>
+
+          <div class="recipe-card">
+            <h4>🍫 Čokoládové cupcakes</h4>
+            <ul>
+              <li>190 g mouky</li>
+              <li>250 g cukru</li>
+              <li>25 g kakaa</li>
+              <li>¼ lžičky sody</li>
+              <li>¼ lžičky soli</li>
+              <li>60 ml rostlinného oleje</li>
+              <li>240 ml horké vody</li>
+            </ul>
+          </div>
+
+          <div class="recipe-card">
+            <h4>❤️ Red Velvet cupcakes</h4>
+            <ul>
+              <li>190 g mouky</li>
+              <li>200 g cukru</li>
+              <li>115 g másla</li>
+              <li>2 vejce</li>
+              <li>1 lžička vanilkového extraktu</li>
+              <li>240 ml horké vody</li>
+              <li>1 lžička vanilkového extraktu</li>
+            </ul>
+          </div>
+
+          <div class="recipe-card">
+            <h4>🍪 Cupcakes s čokoládovou drobenkou</h4>
+            <ul>
+              <li>190 g mouky</li>
+              <li>2 lžičky kypřicího prášku</li>
+              <li>¼ lžičky soli</li>
+              <li>115 g másla</li>
+              <li>150 g cukru</li>
+              <li>2 vejce</li>
+              <li>1 lžička vanilkového extraktu</li>
+              <li>100 g čokoládové drobenky</li>
+              <li>120 ml mléka</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe 2 – creams -->
+      <div class="recipe-block reverse">
+        <div class="recipe-image">
+          <img src="recipe2.jpg" alt="10 krémů na cupcakes">
+        </div>
+        <div class="recipe-content">
+          <h3>10 nejlepších krémů na cupcakes</h3>
+          <p class="recipe-intro">Vyberte si svůj oblíbený krém a ozdobte cupcakes jako profesionál.</p>
+
+          <div class="creams-grid">
+            <div class="cream-item">
+              <span class="num">1</span>
+              <strong>Klasický cream cheese</strong>
+              <p>Smetana 33 % 100 g + tvarohový sýr 300 g + moučkový cukr 80 g</p>
+            </div>
+            <div class="cream-item">
+              <span class="num">2</span>
+              <strong>Čokoládový cream cheese</strong>
+              <p>Sýr 300 g + máslo 100 g + moučkový cukr 60 g + kakao 20 g</p>
+            </div>
+            <div class="cream-item">
+              <span class="num">3</span>
+              <strong>Vanilkový máslový krém</strong>
+              <p>Máslo 200 g + moučkový cukr 120 g + vanilka</p>
+            </div>
+            <div class="cream-item">
+              <span class="num">4</span>
+              <strong>Karamelový krém</strong>
+              <p>Sýr 300 g + vařené kondenzované mléko 150 g + smetana 80 g</p>
+            </div>
+            <div class="cream-item">
+              <span class="num">5</span>
+              <strong>Jahodový krém</strong>
+              <p>Sýr 300 g + smetana 100 g + jahodové pyré 50 g + cukr 60 g</p>
+            </div>
+            <div class="cream-item">
+              <span class="num">6</span>
+              <strong>Malinový krém</strong>
+              <p>Sýr 300 g + smetana 100 g + malinové pyré 50 g + cukr 60 g</p>
+            </div>
+            <div class="cream-item">
+              <span class="num">7</span>
+              <strong>Kokosový krém</strong>
+              <p>Sýr 300 g + smetana 100 g + kokos 30 g + cukr 60 g</p>
+            </div>
+            <div class="cream-item">
+              <span class="num">8</span>
+              <strong>Citronový krém</strong>
+              <p>Sýr 300 g + smetana 100 g + citronová šťáva + kůra + cukr 70 g</p>
+            </div>
+            <div class="cream-item">
+              <span class="num">9</span>
+              <strong>Pistáciový krém</strong>
+              <p>Sýr 300 g + smetana 100 g + pistáciová pasta 60 g + cukr 40 g</p>
+            </div>
+            <div class="cream-item">
+              <span class="num">10</span>
+              <strong>Kávový krém</strong>
+              <p>Sýr 300 g + smetana 100 g + instantní káva 1 lžička + cukr 70 g</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Vytvořeno s 🧡 pro milovníky sladkého pečení</p>
+      <p class="footer-note">Statický web připravený pro GitHub Pages · 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
